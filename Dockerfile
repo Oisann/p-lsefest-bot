@@ -14,7 +14,7 @@ WORKDIR /usr/src/app
 
 RUN git clone https://github.com/Oisann/polsefest-bot.git .
 
-RUN npm install pm2@latest -g
+RUN mkdir -p /usr/src/app/commands
 
 # Install app dependencies
 RUN npm install
